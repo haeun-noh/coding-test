@@ -1,14 +1,15 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+import java.math.*;
 
 class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        long num1 = scan.nextInt();
-        long num2 = scan.nextInt();
+        BigInteger num1 = new BigInteger(scan.next());
+        BigInteger num2 = new BigInteger(scan.next());
 
-        System.out.println(num1+num2);
+        System.out.println(num1.add(num2));
     }
 }
